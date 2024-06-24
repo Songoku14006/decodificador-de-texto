@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel=“stylesheet” href="styles/style.css">
+</head>
+<body class="body">
+
+    <main class="main">
+        <div class="Header">
+            <img class="header-imagem" src="/assets/Vector.png">
+        </div>
+        <div class="div-main">
+        <div class="painel-esquerdo">
+            <div class="painel-esquerdo-topo">
+                <label for="texto"></label>
+                <textarea oninput='if(this.scrollHeight > this.offsetHeight) this.rows += 2' class="painel-esquerdo-texto" id="texto" name="texto" placeholder="Digite seu texto"></textarea>
+            </div>
+                <div class="painel-esquerdo-base">
+                    <div class="painel-esquerdo-base-texto-imagem">
+                        <img class="painel-esquerdo-base-imagem" src="/assets/bi_exclamation-circle-fill.png">
+                        <p class="painel-esquerdo-base-texto">Apenas letras minúsculas e sem acento.</p>
+                    </div>
+                    <div class="painel-esquerdo-base-botoes">
+                        <button onclick="botaoCriptografar()"  class="painel-esquerdo-base-botao-criptografar">Criptografar</button>
+                        <button onclick="botaoDesriptografar()" class="painel-esquerdo-base-botao-descriptografar">Descriptografar</button>
+                    </div>
+                </div>    
+        </div>
+        <div class="painel-direito">
+            <textarea oninput='if(this.scrollHeight > this.offsetHeight) this.rows += 2' class="painel-direito-texto" id="texto-final" name="texto-final" placeholder="" readonly></textarea>     
+            <img id="painel-direito-imagem" class="painel-direito-imagem" src="/assets/High quality products 1 1.png">
+            <div id="painel-direito-textos-e-botao" class="painel-direito-textos">
+                <div id="painel-direito-textos" class="painel-direito-textos">
+                    <p class="painel-direito-texto1" >Nenhuma mensagem<br class="quebra-linha"> encontrada</p>
+                    <p class="painel-direito-texto2" >Digite um texto que você deseja<br class="quebra-linha"> criptografar ou descriptografar.</p>
+                </div>
+                <div class="div-botao-copiar">
+                    <button id="painel-direito-botao-copiar" onclick="botaoCopiar()" class="painel-direito-botao-copiar">Copiar</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+</body>
+<script src="js/app.js"></script>
+</html>

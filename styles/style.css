@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+}
+
+.body {
+    box-sizing: border-box;
+    background-color: #F3F5FC;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.div-main {
+    display: flex;
+    justify-content: space-around;
+    gap: 64px;
+}
+
+.header-imagem {
+    padding: 150% 0 0 180%;
+}
+
+.painel-esquerdo {
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+}
+
+.painel-esquerdo-texto {
+    resize: none;
+    color: #0A3871;
+    opacity: 1;
+    width: 100%;
+    max-width: 400px;
+    padding: 25% 0 0 0;
+    border: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    background-color: transparent;
+}
+
+textarea::placeholder {
+    color: #0A3871;
+}
+
+.painel-esquerdo-base {
+    padding: 50.5% 0 0 0;
+}
+
+.painel-esquerdo-base-texto-imagem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Inter', sans-serif;
+    color: #495057;
+    font-size: 0.75rem;
+}
+
+.painel-esquerdo-base-botoes {
+    display: flex;
+    gap: 24px;
+    padding: 3% 0 0 0;
+}
+
+.painel-esquerdo-base-botao-criptografar {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #0A3871;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: white;
+}
+.painel-esquerdo-base-botao-descriptografar {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #D8DFE8;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #0A3871;
+}
+
+.painel-direito {
+    box-sizing: border-box;
+    width: 400px;
+    min-width: 400px;
+    min-height: 500px;
+    margin-top: 3%;
+    margin-bottom: 0;
+    margin-right: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: transparent;
+    background-color: #FFFFFF; 
+    border-radius: 24px;
+}
+
+.painel-direito-imagem {
+    padding: 45% 0 0 0;
+}
+
+.painel-direito-textos-e-botao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.painel-direito-texto1 {
+    color: #343A40;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.painel-direito-texto2 {
+    color: #495057;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+.painel-direito-botao-copiar{
+    visibility: hidden;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #D8DFE8;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #0A3871;
+}
+
+.painel-direito-texto {
+    resize: none;
+    color: #0A3871;
+    opacity: 1;
+    width: 100%;
+    max-width: 250px;
+    height: 100%;
+    max-height: 470px;
+    padding: 23.75% 0 0 0;
+    border: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    background-color: #FFFFFF;
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .header-imagem {
+        margin-left: 2%;
+    }
+
+    .div-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 64px;
+    }
+
+    .header-imagem {
+        padding: 6% 0 0 5%;
+    }
+    .painel-esquerdo-texto {
+        padding: 8% 0 0 5%;
+        margin-left: 5%;
+    }
+
+    .painel-esquerdo-base {
+        padding: 60% 0 0 5%;
+    }
+
+    .painel-direito {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 688px;
+        min-width: 327px;
+        min-height: 450px;
+        margin: 0;
+        margin-bottom: 32px;
+    }
+    
+    .painel-direito-imagem {
+        display: none;
+    }
+
+    .painel-direito-textos {
+        display: flex;
+        flex-direction: column;
+        padding: 6% 0 0 0;
+        gap: 16px;
+    }
+
+    .painel-direito-texto {
+        width: 624px;
+        max-width: 624px;
+        height: 100%;
+        max-height: 500px;
+        padding: 0 0 25% 0;
+    }
+
+    .painel-esquerdo-base-botoes {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    
+    .quebra-linha {
+        display: none;
+    }
+
+    .div-botao-copiar{
+        padding: 0 0 4% 0 ;
+        user-select: none;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .painel-esquerdo-texto {
+        margin-top: 16px;
+        height: auto;
+    }
+
+    .header-imagem.painel-esquerdo-texto {
+        align-items: left;
+        margin-left: 1%;
+        line-break: normal;
+        gap: 16px;
+    }
+
+    .painel-esquerdo-base {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .painel-esquerdo-base-texto-imagem {
+        justify-content: center;
+        margin-right: 55px;
+    }
+    
+    .painel-esquerdo-base-botoes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 50px;
+    }
+
+    .painel-direito.painel-esquerdo-base-botao-criptografar.painel-esquerdo-base-botao-descriptografar {
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+
+    }
+
+    .painel-direito {
+        max-width: 300px;
+        margin-left: 32px;
+        max-height: 800px;
+        height: 500px;
+        margin-bottom: 32px;
+        margin-left: 32px;
+    }
+
+    .quebra-linha {
+        display: block;
+    }
+
+    .painel-direito-textos {
+        align-items: center;
+        text-align: center;
+    }
+
+    .painel-direito-texto {
+        width: 277px;
+        max-width: 300px;
+        height: 100%;
+        max-height: 500px;
+        padding: 2% 0 0 0;
+    }
+}
